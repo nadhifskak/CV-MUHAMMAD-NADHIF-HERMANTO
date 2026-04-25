@@ -1,0 +1,169 @@
+/* Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Bagian Header */
+.header-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #2c5282;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+}
+
+/* Pengaturan Foto Profil */
+.profile-photo img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2c5282;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.header-section h1 {
+    font-size: 26px;
+    color: #2c5282;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.job-title {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.contact-info p {
+    font-size: 15px;
+    color: #4a5568;
+    margin: 4px 0;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #2c5282;
+}
+
+/* Bagian Umum */
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #2c5282;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.section-title i {
+    font-size: 18px;
+}
+
+.section-content {
+    font-size: 15px;
+    color: #2d3748;
+    text-align: justify;
+}
+
+/* Bagian Pengalaman Kerja */
+.job-item {
+    margin-bottom: 20px;
+}
+
+.job-company {
+    font-size: 17px;
+    color: #2b6cb0;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.job-position {
+    font-size: 15px;
+    color: #2d3748;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.job-period {
+    font-size: 14px;
+    color: #718096;
+    font-weight: normal;
+}
+
+.job-description {
+    padding-left: 20px;
+    font-size: 15px;
+    color: #2d3748;
+}
+
+.job-description li {
+    margin-bottom: 5px;
+}
+
+/* Bagian Pendidikan, Kemampuan, Sertifikasi */
+.education-list, .skills-list, .certificate-list {
+    padding-left: 20px;
+    font-size: 15px;
+    color: #2d3748;
+}
+
+.education-list li, .skills-list li, .certificate-list li {
+    margin-bottom: 8px;
+}
+
+/* Responsif untuk Perangkat Kecil */
+@media (max-width: 600px) {
+    .header-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .header-section h1 {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+}

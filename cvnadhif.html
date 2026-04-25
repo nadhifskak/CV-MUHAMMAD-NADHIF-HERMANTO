@@ -4,185 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Muhammad Nadhif Hermanto</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#165DFF',
-                        secondary: '#36CFC9',
-                        dark: '#1D2129',
-                        light: '#F7F8FA',
-                        gray: '#86909C'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <style type="text/tailwindcss">
-        @layer utilities {
-            .content-auto {
-                content-visibility: auto;
-            }
-            .text-balance {
-                text-wrap: balance;
-            }
-        }
-    </style>
 </head>
-<body class="bg-light text-dark font-sans leading-relaxed">
-    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-5 md:my-10">
-        <!-- Bagian Header / Identitas Diri -->
-        <header class="bg-primary text-white p-6 md:p-8">
-            <div class="flex flex-col md:flex-row items-center gap-6">
-                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-md flex-shrink-0">
-                    <img src="https://p16-flow-sign-sg.ibyteimg.com/ocean-cloud-tos-sg/pdf/97d4c3bfe8532ed48796bc4e9467f223_0_1200.jpg~tplv-0es2k971ck-resize-crop:613:47:790:229:177:182.jpeg?rk3s=1567c5c4&x-expires=1808676765&x-signature=%2FHblUco4r%2BbU47AUTR0xJurOZEg%3D" 
-                         alt="Foto Muhammad Nadhif Hermanto" 
-                         class="w-full h-full object-cover">
-                </div>
-                <div class="text-center md:text-left">
-                    <h1 class="text-[clamp(1.5rem,3vw,2.2rem)] font-bold mb-2">MUHAMMAD NADHIF HERMANTO</h1>
-                    <p class="text-lg opacity-90 mb-4">S.Kom - Teknik Informatika</p>
-                    <div class="flex flex-col sm:flex-row gap-3 text-sm opacity-85">
-                        <div class="flex items-center justify-center md:justify-start gap-1">
-                            <i class="fa fa-map-marker"></i>
-                            <span>Kota Majalengka, Indonesia</span>
-                        </div>
-                        <div class="flex items-center justify-center md:justify-start gap-1">
-                            <i class="fa fa-whatsapp"></i>
-                            <span>0895424479030</span>
-                        </div>
-                        <div class="flex items-center justify-center md:justify-start gap-1">
-                            <i class="fa fa-envelope"></i>
-                            <span>mnadhifh@gmail.com</span>
-                        </div>
-                    </div>
+<body>
+    <div class="container">
+        <!-- Bagian Header / Profil -->
+        <header class="header-section">
+            <!-- Bagian Foto -->
+            <div class="profile-photo">
+                <img src="foto.jpg" alt="Foto Muhammad Nadhif Hermanto">
+            </div>
+            <div class="profile-info">
+                <h1>MUHAMMAD NADHIF HERMANTO</h1>
+                <p class="job-title">S1 Teknik Informatika</p>
+                <div class="contact-info">
+                    <p><i class="fa fa-map-marker"></i> Kota Majalengka, Indonesia</p>
+                    <p><i class="fa fa-whatsapp"></i> 0895424479030</p>
+                    <p><i class="fa fa-envelope"></i> mnadhifh@gmail.com</p>
                 </div>
             </div>
         </header>
 
-        <main class="p-6 md:p-8">
-            <!-- Ringkasan Diri -->
-            <section class="mb-8">
-                <h2 class="text-xl font-bold text-primary border-b-2 border-secondary pb-2 mb-4 flex items-center gap-2">
-                    <i class="fa fa-user"></i>
-                    Ringkasan
-                </h2>
-                <p class="text-gray-700 text-balance">
-                    Lulusan S1 Teknik Informatika STMIK IKMI Cirebon dengan IPK 3.32. Memiliki kombinasi keahlian teknis dan pengalaman lapangan yang kuat, mulai dari pengembangan perangkat lunak, instalasi sistem, hingga pemasangan dan pemeliharaan jaringan CCTV (Analog & IP). Terbiasa bekerja di bawah tekanan, mengutamakan ketelitian, dan mampu beradaptasi di berbagai lingkungan industri (Teknologi, Manufaktur, dan Garment). Berkomitmen memberikan hasil kerja berkualitas tinggi dan solusi operasional yang efektif.
-                </p>
-            </section>
+        <!-- Bagian Ringkasan -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa fa-user"></i> Ringkasan</h2>
+            <p class="section-content">
+                Lulusan S1 Teknik Informatika STMIK IKMI Cirebon dengan IPK 3.32. Memiliki kombinasi keahlian teknis dan pengalaman lapangan yang kuat, mulai dari pengembangan perangkat lunak, instalasi sistem, hingga pemasangan dan pemeliharaan jaringan CCTV (Analog & IP). Terbiasa bekerja di bawah tekanan, mengutamakan ketelitian, dan mampu beradaptasi di berbagai lingkungan industri (Teknologi, Manufaktur, dan Garment). Berkomitmen memberikan hasil kerja berkualitas tinggi dan solusi operasional yang efektif.
+            </p>
+        </section>
 
-            <!-- Pengalaman Kerja -->
-            <section class="mb-8">
-                <h2 class="text-xl font-bold text-primary border-b-2 border-secondary pb-2 mb-4 flex items-center gap-2">
-                    <i class="fa fa-briefcase"></i>
-                    Pengalaman Kerja
-                </h2>
-
-                <!-- Pengalaman 1 -->
-                <div class="mb-5 border-l-4 border-primary pl-4 py-1">
-                    <h3 class="text-lg font-semibold">Admin Sales & Teknisi Lapangan</h3>
-                    <p class="text-gray-600 font-medium">RUMAH CCTV MAJALENGKA | Agustus 2022 – Agustus 2023</p>
-                    <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                        <li>Mengelola administrasi harian, mulai dari pencatatan transaksi, laporan penjualan, penjadwalan tim, hingga kontrol pengeluaran operasional.</li>
-                        <li>Menangani dukungan teknis pelanggan secara langsung di lokasi maupun jarak jauh, memastikan sistem berjalan optimal.</li>
-                        <li>Melakukan instalasi, konfigurasi, dan pemeliharaan perangkat CCTV tipe Analog maupun IP sesuai standar teknis.</li>
-                    </ul>
-                </div>
-
-                <!-- Pengalaman 2 -->
-                <div class="mb-5 border-l-4 border-primary pl-4 py-1">
-                    <h3 class="text-lg font-semibold">Operator CCTV & Pemeliharaan Teknis</h3>
-                    <p class="text-gray-600 font-medium">PT. KALDU SARI NABATI INDONESIA | Agustus 2023 - April 2025</p>
-                    <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                        <li>Memantau keamanan dan kelancaran operasional pabrik melalui sistem pengawasan 24 jam.</li>
-                        <li>Bertanggung jawab atas pemeliharaan preventif dan korektif, termasuk reposisi kamera serta konfigurasi ulang jaringan.</li>
-                        <li>Merancang dan memelihara dokumentasi topologi jaringan CCTV untuk efisiensi penanganan masalah.</li>
-                        <li>Berkoordinasi aktif dengan tim keamanan dan teknis untuk menciptakan lingkungan kerja yang aman dan terkontrol.</li>
-                    </ul>
-                </div>
-
-                <!-- Pengalaman 3 -->
-                <div class="border-l-4 border-primary pl-4 py-1">
-                    <h3 class="text-lg font-semibold">Quality Control Inspector</h3>
-                    <p class="text-gray-600 font-medium">PT LYG GARMENT INDONESIA | Mei 2025 – September 2025</p>
-                    <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                        <li>Melakukan pemeriksaan menyeluruh terhadap produk jadi guna memastikan kesesuaian dengan standar kualitas, desain, dan spesifikasi perusahaan.</li>
-                        <li>Mengidentifikasi jenis dan penyebab cacat produksi (bahan, jahitan, potongan), serta memberikan rekomendasi perbaikan kepada tim produksi.</li>
-                        <li>Menyusun laporan hasil inspeksi secara berkala sebagai dasar evaluasi dan peningkatan mutu produk berkelanjutan.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Pendidikan -->
-            <section class="mb-8">
-                <h2 class="text-xl font-bold text-primary border-b-2 border-secondary pb-2 mb-4 flex items-center gap-2">
-                    <i class="fa fa-graduation-cap"></i>
-                    Pendidikan
-                </h2>
-                <div class="space-y-3 text-gray-700">
-                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
-                        <span class="font-medium">STMIK IKMI CIREBON</span>
-                        <span class="text-gray-500 text-sm">2018 – 2022</span>
-                    </div>
-                    <p class="ml-0 sm:ml-4">S1 Teknik Informatika – IPK: 3.32/4.00</p>
-
-                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
-                        <span class="font-medium">SMK NEGERI 1 MAJALENGKA</span>
-                        <span class="text-gray-500 text-sm">2016 – 2018</span>
-                    </div>
-                    <p class="ml-0 sm:ml-4">Jurusan Teknik Komputer dan Jaringan</p>
-
-                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
-                        <span class="font-medium">SMP NEGERI 2 MAJALENGKA</span>
-                        <span class="text-gray-500 text-sm">2013 – 2015</span>
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
-                        <span class="font-medium">SDN CIGASONG 1</span>
-                        <span class="text-gray-500 text-sm">2007 – 2012</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Kemampuan & Sertifikasi -->
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- Kemampuan -->
-                <section>
-                    <h2 class="text-xl font-bold text-primary border-b-2 border-secondary pb-2 mb-4 flex items-center gap-2">
-                        <i class="fa fa-cogs"></i>
-                        Kemampuan
-                    </h2>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>Bekerja dibawah tekanan</li>
-                        <li>Bekerja sama tim</li>
-                        <li>Bertanggung jawab dan dapat diandalkan</li>
-                        <li>Pemahaman tentang GMP</li>
-                    </ul>
-                </section>
-
-                <!-- Sertifikasi -->
-                <section>
-                    <h2 class="text-xl font-bold text-primary border-b-2 border-secondary pb-2 mb-4 flex items-center gap-2">
-                        <i class="fa fa-certificate"></i>
-                        Sertifikasi
-                    </h2>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>Sertifikat Komputer Dasar & Lanjutan</li>
-                        <li>Microsoft Office Specialist</li>
-                        <li>Cisco Networking Academy (Netacad)</li>
-                        <li>CGSA Access Control – Hikvision Certified</li>
-                        <li>Cisco Packet Tracer</li>
-                    </ul>
-                </section>
+        <!-- Bagian Pengalaman Kerja -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa fa-briefcase"></i> Pengalaman Kerja</h2>
+            
+            <div class="job-item">
+                <h3 class="job-company">RUMAH CCTV MAJALENGKA</h3>
+                <p class="job-position">Admin Sales & Teknisi Lapangan <span class="job-period">(Agustus 2022 – Agustus 2023)</span></p>
+                <ul class="job-description">
+                    <li>Mengelola administrasi harian, mulai dari pencatatan transaksi, laporan penjualan, penjadwalan tim, hingga kontrol pengeluaran operasional.</li>
+                    <li>Menangani dukungan teknis pelanggan secara langsung di lokasi maupun jarak jauh, memastikan sistem berjalan optimal.</li>
+                    <li>Melakukan instalasi, konfigurasi, dan pemeliharaan perangkat CCTV tipe Analog maupun IP sesuai standar teknis.</li>
+                </ul>
             </div>
-        </main>
+
+            <div class="job-item">
+                <h3 class="job-company">PT. KALDU SARI NABATI INDONESIA</h3>
+                <p class="job-position">Operator CCTV & Pemeliharaan Teknis <span class="job-period">(Agustus 2023 - April 2025)</span></p>
+                <ul class="job-description">
+                    <li>Memantau keamanan dan kelancaran operasional pabrik melalui sistem pengawasan 24 jam.</li>
+                    <li>Bertanggung jawab atas pemeliharaan preventif dan korektif, termasuk reposisi kamera serta konfigurasi ulang jaringan.</li>
+                    <li>Merancang dan memelihara dokumentasi topologi jaringan CCTV untuk efisiensi penanganan masalah.</li>
+                    <li>Berkoordinasi aktif dengan tim keamanan dan teknis untuk menciptakan lingkungan kerja yang aman dan terkontrol.</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <h3 class="job-company">PT LYG GARMENT INDONESIA</h3>
+                <p class="job-position">Quality Control Inspector <span class="job-period">(Mei 2025 – September 2025)</span></p>
+                <ul class="job-description">
+                    <li>Melakukan pemeriksaan menyeluruh terhadap produk jadi guna memastikan kesesuaian dengan standar kualitas, desain, dan spesifikasi perusahaan.</li>
+                    <li>Mengidentifikasi jenis dan penyebab cacat produksi (bahan, jahitan, potongan), serta memberikan rekomendasi perbaikan kepada tim produksi.</li>
+                    <li>Menyusun laporan hasil inspeksi secara berkala sebagai dasar evaluasi dan peningkatan mutu produk berkelanjutan.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Bagian Pendidikan -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa fa-graduation-cap"></i> Pendidikan</h2>
+            <ul class="education-list">
+                <li><strong>STMIK IKMI CIREBON</strong> | 2018 – 2022<br>S1 Teknik Informatika – IPK: 3.32/4.00</li>
+                <li><strong>SMK NEGERI 1 MAJALENGKA</strong> | 2016 – 2018<br>Jurusan Teknik Komputer dan Jaringan</li>
+                <li><strong>SMP NEGERI 2 MAJALENGKA</strong> | 2013 – 2015</li>
+                <li><strong>SDN CIGASONG 1</strong> | 2007 – 2012</li>
+            </ul>
+        </section>
+
+        <!-- Bagian Kemampuan -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa fa-cogs"></i> Kemampuan</h2>
+            <ul class="skills-list">
+                <li>Bekerja dibawah tekanan</li>
+                <li>Bekerja sama tim</li>
+                <li>Bertanggung jawab dan dapat diandalkan</li>
+                <li>Pemahaman tentang GMP</li>
+            </ul>
+        </section>
+
+        <!-- Bagian Sertifikasi -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa fa-certificate"></i> Sertifikasi</h2>
+            <ul class="certificate-list">
+                <li>Sertifikat Komputer Dasar & Lanjutan</li>
+                <li>Microsoft Office Specialist</li>
+                <li>Cisco Networking Academy (Netacad)</li>
+                <li>CGSA Access Control – Hikvision Certified</li>
+                <li>Cisco Packet Tracer</li>
+            </ul>
+        </section>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
